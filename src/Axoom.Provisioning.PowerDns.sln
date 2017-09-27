@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axoom.Provisioning.PowerDns
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axoom.Provisioning.PowerDns.UnitTests", "Axoom.Provisioning.PowerDns.UnitTests\Axoom.Provisioning.PowerDns.UnitTests.csproj", "{934BF976-C2E8-4402-BC7B-54FEE2FE6E76}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__docs", "__docs", "{9B6013AA-F5BD-49D6-83EB-0D258C72DBE0}"
+ProjectSection(SolutionItems) = preProject
+	..\readme.md = ..\readme.md
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
