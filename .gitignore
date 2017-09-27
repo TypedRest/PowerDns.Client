@@ -1,0 +1,9 @@
+/src/**/obj/
+/src/**/bin/
+/artifacts/
+
+/src/.vs/
+/src/.idea/
+/src/_ReSharper.*/
+/src/**/*.user
+.vscode/

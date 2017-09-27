@@ -1,0 +1,5 @@
+mode: ContinuousDeployment
+branches:
+  develop:
+    tag: alpha
+    increment: patch
