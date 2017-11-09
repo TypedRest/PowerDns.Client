@@ -4,6 +4,7 @@
     <RootNamespace>Axoom.Provisioning.PowerDns</RootNamespace>
     <IsPackable>False</IsPackable>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);1591;NU1701</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="4.19.3" />
