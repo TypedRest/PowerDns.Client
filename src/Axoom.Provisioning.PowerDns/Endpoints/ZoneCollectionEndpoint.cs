@@ -22,6 +22,7 @@ namespace Axoom.Provisioning.PowerDns.Endpoints
         public ZoneCollectionEndpoint(IEndpoint referrer, string relativeUri)
             : base(referrer, relativeUri)
         {
+            // TODO: Remove after next TypedRest update
             SetDefaultLinkTemplate(rel: "child", href: "./zones/{id}");
         }
 
@@ -31,6 +32,7 @@ namespace Axoom.Provisioning.PowerDns.Endpoints
         /// <param name="relativeUri">The URI of the child endpoint relative to the this endpoint.</param>
         protected virtual ZoneElementEndpoint BuildElementEndpoint(Uri relativeUri) => (ZoneElementEndpoint)Activator.CreateInstance(typeof(ZoneElementEndpoint), this, relativeUri);
 
+        // TODO: Remove after next TypedRest update
         public virtual ZoneElementEndpoint this[string id]
         {
             get
