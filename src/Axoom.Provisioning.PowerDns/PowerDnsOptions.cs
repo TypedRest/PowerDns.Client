@@ -4,15 +4,21 @@ using JetBrains.Annotations;
 
 namespace Axoom.Provisioning.PowerDns
 {
+    /// <summary>
+    /// Connection configuration for <see cref="IPowerDns"/>.
+    /// </summary>
     [PublicAPI]
     [ExcludeFromCodeCoverage]
     public class PowerDnsOptions
     {
-        public string Hostname { get; set; } = "localhost";
-        public int Port { get; set; } = 80;
-        public bool UseTls { get; set; }
+        /// <summary>
+        /// The top-level URI of the PowerDNS instance, not including the API version.
+        /// </summary>
+        public Uri Uri { get; set; }
+ 
+        /// <summary>
+        /// The API key used for authentication.
+        /// </summary>
         public string ApiKey { get; set; }
-
-        public Uri GetEndpoint() => new Uri($"http{(UseTls ? "s": string.Empty)}://{Hostname}:{Port}");
     }
 }

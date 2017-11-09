@@ -18,7 +18,6 @@
     <PackageProjectUrl>https://tfs.inside-axoom.org/tfs/axoom/axoom/_git/Axoom.Provisioning.PowerDns?path=%2Freadme.md</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
     <PackageReference Include="TypedRest" Version="0.36.0" />
   </ItemGroup>
   <ItemGroup>

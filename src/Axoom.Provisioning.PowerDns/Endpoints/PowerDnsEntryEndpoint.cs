@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Net.Http.Formatting;
-using Axoom.Provisioning.PowerDns.Endpoints;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using TypedRest;
 
-namespace Axoom.Provisioning.PowerDns
+namespace Axoom.Provisioning.PowerDns.Endpoints
 {
-    internal class PowerDnsHttpClient : EntryEndpoint
+    internal class PowerDnsEntryEndpoint : EntryEndpoint
     {
-        public PowerDnsHttpClient(Uri uri, string apiKey)
-            : base(new Uri(uri, new Uri("api/v1", UriKind.Relative)), serializer: CreateJsonMediaTypeFormatter()) =>
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="uri">The URI of the PowerDNS API including the API version.</param>
+        /// <param name="apiKey">The API key used for authentication.</param>
+        public PowerDnsEntryEndpoint(Uri uri, string apiKey)
+            : base(uri, serializer: CreateJsonMediaTypeFormatter()) =>
             HttpClient.DefaultRequestHeaders.Add("X-API-KEY", apiKey);
 
         public ServerCollectionEndpoint Servers => new ServerCollectionEndpoint(this, new Uri("servers", UriKind.Relative));

@@ -2,20 +2,14 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Axoom.Provisioning.PowerDns
+namespace Axoom.Provisioning.PowerDns.Endpoints
 {
-    public class PowerDnsHttpClientFacts
+    public class PowerDnsEntryEndpointFacts
     {
-        private readonly PowerDnsHttpClient _client;
+        private readonly PowerDnsEntryEndpoint _client;
 
-        public PowerDnsHttpClientFacts() 
-            => _client = new PowerDnsHttpClient(new Uri("http://host"), apiKey: "123");
-
-        [Fact]
-        public void ServerCollectionEndpointHasCorrectUri()
-        {
-            _client.Servers.Uri.Should().Be("http://host/api/v1/servers/");
-        }
+        public PowerDnsEntryEndpointFacts() 
+            => _client = new PowerDnsEntryEndpoint(new Uri("http://host/api/v1/"), apiKey: "123");
         
         [Fact]
         public void ServerElementEndpointHasCorrectUri()
