@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http.Formatting;
+using Axoom.Provisioning.PowerDns.JsonConverters;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using TypedRest;
 
 namespace Axoom.Provisioning.PowerDns.Endpoints
@@ -25,7 +25,7 @@ namespace Axoom.Provisioning.PowerDns.Endpoints
                 SerializerSettings = new JsonSerializerSettings
                 {
                     NullValueHandling = NullValueHandling.Ignore,
-                    ContractResolver = new CamelCasePropertyNamesContractResolver()
+                    ContractResolver = new LowerCasePropertyNamesContractResolver()
                 }
             };
     }

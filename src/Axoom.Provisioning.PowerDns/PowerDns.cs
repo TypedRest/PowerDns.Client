@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Axoom.Provisioning.PowerDns.DataTransferObjects;
 using Axoom.Provisioning.PowerDns.Endpoints;
 using JetBrains.Annotations;
+#if NETSTANDARD2_0
+using Microsoft.Extensions.Options;
+#endif
 
 namespace Axoom.Provisioning.PowerDns
 {
@@ -15,12 +18,20 @@ namespace Axoom.Provisioning.PowerDns
     {
         private readonly ServerElementEndpoint _serverEndpoint;
 
+#if NETSTANDARD2_0
+        public PowerDns(IOptions<PowerDnsOptions> options)
+            => _serverEndpoint = new PowerDnsEntryEndpoint(
+                       new Uri(options.Value.Uri, new Uri("api/v1", UriKind.Relative)),
+                       options.Value.ApiKey)
+                   .Servers["localhost"];
+#else
         public PowerDns(PowerDnsOptions options)
             => _serverEndpoint = new PowerDnsEntryEndpoint(
                        new Uri(options.Uri, new Uri("api/v1", UriKind.Relative)),
                        options.ApiKey)
                    .Servers["localhost"];
-        
+#endif
+
         public Task<List<Zone>> GetZonesAsync(CancellationToken cancellationToken = default(CancellationToken))
             => _serverEndpoint.Zones.ReadAllAsync(cancellationToken);
 
