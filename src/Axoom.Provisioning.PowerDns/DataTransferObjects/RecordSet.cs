@@ -48,6 +48,7 @@ namespace Axoom.Provisioning.PowerDns.DataTransferObjects
         /// When comments is present, all existing comments for the <see cref="Record"/>s matching name and type will be deleted, 
         /// and then new comments given in comments will be created.
         /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
         public ChangeType? ChangeType { get; set; }
         
         /// <summary>
