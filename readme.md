@@ -1,36 +1,37 @@
-# Axoom.Provisioning.PowerDns
+# PowerDNS Client
 
-This library provides a client for the PowerDNS API.
+[![NuGet](https://img.shields.io/nuget/v/PowerDns.Client.svg)](https://www.nuget.org/packages/PowerDns.Client/)
+[![Build status](https://img.shields.io/appveyor/ci/AXOOM/powerdns-client.svg)](https://ci.appveyor.com/project/AXOOM/powerdns-client)
+
+This project provides a .NET client library for the [PowerDNS](https://www.powerdns.com/) API.
 
 ## Usage
 
-```c#
-serviceCollection
-    .AddOptions()
-    .Configure<PowerDnsOptions>(opt =>
-                      {
-                        opt.Hostname = "localhost";
-                        opt.Port = 443;
-                        opt.UseTls = true;
-                        opt.ApiKey = "changeme"
-                      })
-    .AddPowerDns();
-var powerDns = serviceCollection.GetRequiredService<IPowerDns>(); 
+Add the NuGet package `PowerDns.Client` to your project. You can then create an instance of the client like this:
+
+```csharp
+var client = new PowerDnsClient(
+    uri: new Uri("http://example.com/"), // without /api/v1
+    apiKey: "changeme");
+var zonesEndpoint = client.Servers["localhost"].Zones;
 ```
 
-### Get a list of all zones
-```c#
-List<Zone> zones = await powerDns.GetZonesAsync();
+Get a list of all zones:
+
+```csharp
+List<Zone> zones = await zonesEndpoint.ReadAllAsync();
 ```
 
-### Get a specific zone
-```c#
-Zone zone = await powerDns.GetZoneAsync("example.org");
+Get a specific zone:
+
+```csharp
+Zone zone = await zonesEndpoint["example.org"].ReadAsync();
 ```
 
-### Create a new zone
-```c#
-var zone = new Zone(name: "example.org", nameServers: "ns1.example.org", "ns2.example.org")
+Create a new zone:
+
+```csharp
+await zonesEndpoint.CreateAsync(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org")
 {
     RecordSets =
     {
@@ -46,21 +47,22 @@ var zone = new Zone(name: "example.org", nameServers: "ns1.example.org", "ns2.ex
             }
         }
     }
-};
-await powerDns.CreateZoneAsync(zone);
+});
 ```
 
-### Patch a Record Set
-```c#
-RecordSet recordSet = await powerDns.GetRecordSetAsync(zoneName: "example.org", "www.example.org");
+Patch a record set in a zone:
+
+```csharp
+RecordSet recordSet = await zonesEndpoint["example.org"].GetRecordSetAsync("www.example.org");
 
 recordSet.ChangeType = ChangeType.Replace;
 recordSet.Records.Add(new ResourceRecord(content: "4.3.2.1"));
 
-await powerDns.PatchRecordSetAsync(zoneName, "example.org", recordSet);
+await zonesEndpoint["example.org"].PatchRecordSetAsync(recordSet);
 ```
 
-### Delete a zone
-```c#
-await powerDns.DeleteZoneAsync("example.org");
+Delete a zone:
+
+```csharp
+await zonesEndpoint["example.org"].DeleteAsync();
 ```
