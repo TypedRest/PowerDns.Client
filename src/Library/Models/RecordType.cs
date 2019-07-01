@@ -13,11 +13,11 @@ namespace PowerDns.Client.Models
         TXT,
         PTR,
 
-        DNSKEY,
+        DNSKey,
         DS,
         NSEC,
         NSEC3,
-        NSEC3PARAM,
+        NSEC3Param,
         RRSIG,
         
         AFSDB,
