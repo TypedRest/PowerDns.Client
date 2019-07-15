@@ -12,6 +12,7 @@ namespace PowerDns.Client.Models
         SOA,
         TXT,
         PTR,
+		SRV,
 
         DNSKey,
         DS,
