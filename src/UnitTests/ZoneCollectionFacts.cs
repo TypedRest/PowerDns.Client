@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using PowerDns.Client.Models;
 using RichardSzalay.MockHttp;
+using TypedRest.Endpoints.Generic;
 using Xunit;
 
 namespace PowerDns.Client
 {
     public class ZoneCollectionFacts : EndpointFactsBase
     {
-        private readonly IZoneCollectionEndpoint _zonesEndpoint;
+        private readonly ICollectionEndpoint<Zone> _zonesEndpoint;
 
         public ZoneCollectionFacts()
         {

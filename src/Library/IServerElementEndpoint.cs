@@ -1,4 +1,6 @@
-using TypedRest;
+using PowerDns.Client.Models;
+using TypedRest.Endpoints;
+using TypedRest.Endpoints.Generic;
 
 namespace PowerDns.Client
 {
@@ -10,6 +12,6 @@ namespace PowerDns.Client
         /// <summary>
         /// Represents a list of DNS zones managed by a PowerDNS server.
         /// </summary>
-        IZoneCollectionEndpoint Zones { get; }
+        ICollectionEndpoint<Zone> Zones { get; }
     }
 }

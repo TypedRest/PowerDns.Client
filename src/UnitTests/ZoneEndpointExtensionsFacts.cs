@@ -5,7 +5,7 @@ using FluentAssertions;
 using Moq;
 using PowerDns.Client.Exceptions;
 using PowerDns.Client.Models;
-using TypedRest;
+using TypedRest.Endpoints.Generic;
 using Xunit;
 
 namespace PowerDns.Client

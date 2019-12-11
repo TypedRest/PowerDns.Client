@@ -20,6 +20,8 @@ namespace PowerDns.Client.Models
 
         public static implicit operator CanonicalName(string name) => new CanonicalName(name);
 
+        public static implicit operator string(CanonicalName name) => name.ToString();
+
         public override string ToString() => _name;
 
         public bool Equals(CanonicalName other)

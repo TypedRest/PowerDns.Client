@@ -1,5 +1,7 @@
 using System;
-using TypedRest;
+using PowerDns.Client.Models;
+using TypedRest.Endpoints;
+using TypedRest.Endpoints.Generic;
 
 namespace PowerDns.Client
 {
@@ -12,6 +14,6 @@ namespace PowerDns.Client
             : base(referrer, relativeUri)
         {}
 
-        public IZoneCollectionEndpoint Zones => new ZoneCollectionEndpoint(this);
+        public ICollectionEndpoint<Zone> Zones => new ZoneCollectionEndpoint(this);
     }
 }

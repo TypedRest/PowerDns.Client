@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using PowerDns.Client.Exceptions;
 using PowerDns.Client.Models;
 using TypedRest;
+using TypedRest.Endpoints.Generic;
 
 namespace PowerDns.Client
 {

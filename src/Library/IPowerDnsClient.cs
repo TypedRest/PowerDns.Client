@@ -1,4 +1,5 @@
-using TypedRest;
+using TypedRest.Endpoints;
+using TypedRest.Endpoints.Generic;
 
 namespace PowerDns.Client
 {
