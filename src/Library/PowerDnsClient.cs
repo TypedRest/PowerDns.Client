@@ -28,9 +28,9 @@ namespace PowerDns.Client
         /// Creates a new PowerDNS API Client using a custom <see cref="HttpClient"/>. This is usually used for custom authentication schemes, e.g. client certificates.
         /// </summary>
         /// <param name="uri">The URI of the PowerDNS instance (without /api/v1).</param>
-        /// <param name="httpClient">The <see cref="HttpClient"/> to use for communication with My Service.</param>
+        /// <param name="httpClient">The <see cref="HttpClient"/> to use for communication with PowerDNS.</param>
         public PowerDnsClient(Uri uri, HttpClient httpClient)
-            : base(uri, httpClient, serializer: BuildSerializer())
+            : base(httpClient, uri, BuildSerializer())
         {}
 
         public IIndexerEndpoint<IServerElementEndpoint> Servers => new IndexerEndpoint<ServerElementEndpoint>(this, relativeUri: "./api/v1/servers");

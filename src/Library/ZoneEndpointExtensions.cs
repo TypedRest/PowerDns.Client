@@ -4,11 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Authentication;
 using System.Threading;
 using System.Threading.Tasks;
 using PowerDns.Client.Exceptions;
 using PowerDns.Client.Models;
-using TypedRest;
 using TypedRest.Endpoints.Generic;
 
 namespace PowerDns.Client
