@@ -1,10 +1,15 @@
+*.user
+*.bak
+*.db
+
+# Caches
+.vs/
+.idea/
+_ReSharper.*/
+obj/
+bin/
+/doc/*.tag
+
+# Output
 /artifacts/
-
-/src/**/obj/
-/src/**/bin/
-
-/src/.vs/
-/src/.idea/
-/src/_ReSharper.*/
-/src/**/*.user
-.vscode/
+**/TestResults/

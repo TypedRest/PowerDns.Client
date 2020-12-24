@@ -1,30 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <!-- Build config -->
   <PropertyGroup>
     <AssemblyName>PowerDns.Client</AssemblyName>
     <RootNamespace>PowerDns.Client</RootNamespace>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <OutputType>Library</OutputType>
-    <OutputPath>..\..\artifacts</OutputPath>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PublishRepositoryUrl>True</PublishRepositoryUrl>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <OutputPath>..\..\artifacts\$(Configuration)\</OutputPath>
+    <OutputType>Library</OutputType>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
+  <!-- NuGet package metadata -->
   <PropertyGroup>
-    <Company>AXOOM GmbH</Company>
-    <Copyright>Copyright (c) AXOOM GmbH</Copyright>
-    <Description>client library for the PowerDNS API</Description>
-    <PackageProjectUrl>https://github.com/AXOOM/PowerDns.Client</PackageProjectUrl>
+    <Description>Client library for the PowerDNS API</Description>
     <PackageTags>PowerDNS API Client</PackageTags>
+    <PackageProjectUrl>https://github.com/TypedRest/PowerDns.Client</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/TypedRest/PowerDns.Client</RepositoryUrl>
+    <Authors>Bastian Eicher</Authors>
   </PropertyGroup>
 
+  <!-- Dependencies -->
   <ItemGroup>
-    <PackageReference Include="TypedRest" Version="1.1.0" />
+    <PackageReference Include="TypedRest" Version="1.3.3" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 

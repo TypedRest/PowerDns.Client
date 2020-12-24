@@ -1,5 +1,28 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": ["Test", "Assert", "Mock", "[Xx]unit", "Moq"],
+      "groupName": "Testing deps",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packagePatterns": ["SourceLink", "TypedRest", "NJsonSchema"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packagePatterns": ["^Microsoft\\.Extensions", "^Microsoft\\.AspNetCore", "^Microsoft\\.EntityFrameworkCore"],
+      "groupName": "Microsoft Extensions",
+      "separateMinorPatch": true
+    },
+    {
+      "packagePatterns": ["^Microsoft\\.Extensions", "^Microsoft\\.AspNetCore", "^Microsoft\\.EntityFrameworkCore"],
+      "updateTypes": ["major", "minor"],
+      "enabled": false
+    }
   ]
 }
