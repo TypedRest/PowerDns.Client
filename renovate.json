@@ -1,5 +1,18 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": ["Test", "Assert", "Mock", "[Xx]unit", "Moq"],
+      "groupName": "Testing deps",
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packagePatterns": ["SourceLink", "TypedRest"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
   ]
 }

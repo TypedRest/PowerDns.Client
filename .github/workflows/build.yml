@@ -1,0 +1,74 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      # Prepare
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: gittools/actions/gitversion/setup@v0.9.7
+        with:
+          versionSpec: '5.5.x'
+      - uses: gittools/actions/gitversion/execute@v0.9.7
+        id: gitversion
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~\AppData\Roaming\0install.net
+            ~\AppData\Local\0install.net
+            C:\ProgramData\0install.net
+          key: 0install-${{hashFiles('**/build.ps1')}}
+
+      # Build
+      - name: Build (pre-release)
+        if: steps.gitversion.outputs.preReleaseLabel != ''
+        run: .\build.ps1 ${{steps.gitversion.outputs.nuGetVersion}}-${{steps.gitversion.outputs.shortSha}}
+      - name: Build (release)
+        if: steps.gitversion.outputs.preReleaseLabel == ''
+        run: .\build.ps1 ${{steps.gitversion.outputs.nuGetVersion}}
+      - name: Report test results
+        if: always()
+        uses: scacap/action-surefire-report@v1
+        with:
+          github_token: ${{github.token}}
+          report_paths: '**/TestResults/TestResults.xml'
+
+      # Release
+      - name: Create GitHub Release
+        if: steps.gitversion.outputs.preReleaseLabel == ''
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{github.ref}}
+          release_name: ${{github.ref}}
+        env:
+          GITHUB_TOKEN: ${{github.token}}
+      - name: Post-release commit
+        if: steps.gitversion.outputs.preReleaseLabel == ''
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git checkout -q master
+          git commit --all -m "Automatic post-release commit"
+          git push -q
+
+      # Publish
+      - name: Publish documentation
+        if: steps.gitversion.outputs.preReleaseLabel == ''
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{github.token}}
+          force_orphan: true
+          publish_dir: artifacts/Documentation
+          cname: powerdns.typedrest.net
+      - name: Publish packages (GitHub)
+        if: github.event_name == 'push'
+        run: |
+          Get-ChildItem artifacts\Release\*.nupkg | ForEach-Object {
+            curl.exe -sS -X PUT -u "${{github.actor}}:${{github.token}}" -F package=@$_ https://nuget.pkg.github.com/${{github.repository_owner}}/
+          }
+      - name: Publish packages (NuGet.org)
+        if: steps.gitversion.outputs.preReleaseLabel == ''
+        run: dotnet nuget push artifacts\Release\*.nupkg --source nuget.org --api-key ${{secrets.NUGET_API_KEY}}
