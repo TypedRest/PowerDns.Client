@@ -39,13 +39,13 @@ namespace PowerDns.Client
         }
 
         [Fact]
-        public void GettingRecordSetThrowsRecordSetNotFoundExceptionIfNotFound()
+        public async Task GettingRecordSetThrowsRecordSetNotFoundExceptionIfNotFound()
         {
             _endpointMock.Setup(x => x.ReadAsync(CancellationToken.None))
                          .ReturnsAsync(new Zone("example.org"));
 
-            _endpoint.Awaiting(x => x.GetRecordSetAsync("www.example.org"))
-                     .Should().Throw<RecordSetNotFoundException>();
+            await _endpoint.Awaiting(x => x.GetRecordSetAsync("www.example.org"))
+                           .Should().ThrowAsync<RecordSetNotFoundException>();
         }
 
         [Fact]
