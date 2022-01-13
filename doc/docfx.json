@@ -1,0 +1,48 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../artifacts/Release/netstandard2.0",
+          "files": [
+            "PowerDns.Client.dll"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "globalMetadata": {
+      "_baseUrl": "https://powerdns.typedrest.net",
+      "_appTitle": "PowerDNS Client for .NET",
+      "_appFooter": "Copyright Bastian Eicher",
+      "_disableBreadcrumb": true,
+      "_enableNewTab": true
+    },
+    "content": [
+      {
+        "files": [
+          "*.md",
+          "toc.yml",
+          "api/*.yml"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "src": "../src/",
+        "files": [
+          "**/*.md"
+        ]
+      }
+    ],
+    "xref": [
+      "https://dotnet.typedrest.net/xrefmap.yml"
+    ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "dest": "../artifacts/Documentation"
+  }
+}

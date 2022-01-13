@@ -1,12 +1,16 @@
-This project provides a .NET client library for the [PowerDNS](https://www.powerdns.com/) API.
+---
+title: Home
+---
 
-[**GitHub repository**](https://github.com/TypedRest/PowerDns.Client)
+# PowerDNS Client for .NET
+
+This project provides a .NET client library for the [PowerDNS](https://www.powerdns.com/) API.
 
 ## Usage
 
 Add the NuGet package `PowerDns.Client` to your project. You can then create an instance of the client like this:
 
-```{.cs}
+```csharp
 var client = new PowerDnsClient(
     uri: new Uri("http://example.com/"), // without /api/v1
     apiKey: "changeme");
@@ -15,19 +19,19 @@ var zonesEndpoint = client.Servers["localhost"].Zones;
 
 Get a list of all zones:
 
-```{.cs}
+```csharp
 List<Zone> zones = await zonesEndpoint.ReadAllAsync();
 ```
 
 Get a specific zone:
 
-```{.cs}
+```csharp
 Zone zone = await zonesEndpoint["example.org"].ReadAsync();
 ```
 
 Create a new zone:
 
-```{.cs}
+```csharp
 await zonesEndpoint.CreateAsync(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org")
 {
     RecordSets =
@@ -49,7 +53,7 @@ await zonesEndpoint.CreateAsync(new Zone("example.org", /*nameservers:*/ "ns1.ex
 
 Patch a record set in a zone:
 
-```{.cs}
+```csharp
 RecordSet recordSet = await zonesEndpoint["example.org"].GetRecordSetAsync("www.example.org");
 
 recordSet.ChangeType = ChangeType.Replace;
@@ -60,6 +64,6 @@ await zonesEndpoint["example.org"].PatchRecordSetAsync(recordSet);
 
 Delete a zone:
 
-```{.cs}
+```csharp
 await zonesEndpoint["example.org"].DeleteAsync();
 ```
