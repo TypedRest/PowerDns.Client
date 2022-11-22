@@ -6,15 +6,15 @@ jobs:
     runs-on: windows-2022
     steps:
       # Prepare
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: gittools/actions/gitversion/setup@v0.9.11
+      - uses: gittools/actions/gitversion/setup@v0.9.15
         with:
-          versionSpec: '5.7.x'
-      - uses: gittools/actions/gitversion/execute@v0.9.11
+          versionSpec: '5.11.x'
+      - uses: gittools/actions/gitversion/execute@v0.9.15
         id: gitversion
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: |
             ~\AppData\Roaming\0install.net
