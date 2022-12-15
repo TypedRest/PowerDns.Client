@@ -19,12 +19,16 @@
   <!-- NuGet package metadata -->
   <PropertyGroup>
     <Description>Client library for the PowerDNS API</Description>
+    <Authors>Bastian Eicher</Authors>
     <PackageTags>PowerDNS API Client</PackageTags>
     <PackageProjectUrl>https://github.com/TypedRest/PowerDns.Client</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/TypedRest/PowerDns.Client</RepositoryUrl>
-    <Authors>Bastian Eicher</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <!-- Dependencies -->
   <ItemGroup>
