@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PowerDnsClient
+   | PowerDNS Client for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PowerDnsClient
+   | PowerDNS Client for .NET ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PowerDns.Client.PowerDnsClient">
+  
+  
+  <h1 id="PowerDns_Client_PowerDnsClient" data-uid="PowerDns.Client.PowerDnsClient" class="text-break">Class PowerDnsClient
+  </h1>
+  <div class="markdown level0 summary"><p>A type-safe client for the PowerDNS API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PowerDnsClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="PowerDns.Client.IPowerDnsClient.html">IPowerDnsClient</a></div>
+    <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.IEndpoint.html">IEndpoint</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerDns.Client.html">PowerDns.Client</a></h6>
+  <h6><strong>Assembly</strong>: PowerDns.Client.dll</h6>
+  <h5 id="PowerDns_Client_PowerDnsClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PowerDnsClient : EntryEndpoint, IPowerDnsClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PowerDns_Client_PowerDnsClient__ctor_" data-uid="PowerDns.Client.PowerDnsClient.#ctor*"></a>
+  <h4 id="PowerDns_Client_PowerDnsClient__ctor_System_Uri_System_Net_Http_HttpClient_" data-uid="PowerDns.Client.PowerDnsClient.#ctor(System.Uri,System.Net.Http.HttpClient)">PowerDnsClient(Uri, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Creates a new PowerDNS API Client using a custom <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a>. This is usually used for custom authentication schemes, e.g. client certificates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PowerDnsClient(Uri uri, HttpClient httpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The URI of the PowerDNS instance (without /api/v1).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> to use for communication with PowerDNS.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerDns_Client_PowerDnsClient__ctor_" data-uid="PowerDns.Client.PowerDnsClient.#ctor*"></a>
+  <h4 id="PowerDns_Client_PowerDnsClient__ctor_System_Uri_System_String_" data-uid="PowerDns.Client.PowerDnsClient.#ctor(System.Uri,System.String)">PowerDnsClient(Uri, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new PowerDNS API Client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PowerDnsClient(Uri uri, string apiKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The URI of the PowerDNS instance (without /api/v1).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The API key used for authentication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PowerDns_Client_PowerDnsClient_Servers_" data-uid="PowerDns.Client.PowerDnsClient.Servers*"></a>
+  <h4 id="PowerDns_Client_PowerDnsClient_Servers" data-uid="PowerDns.Client.PowerDnsClient.Servers">Servers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIndexerEndpoint&lt;IServerElementEndpoint&gt; Servers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IIndexerEndpoint-1.html">IIndexerEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.IServerElementEndpoint.html">IServerElementEndpoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="PowerDns.Client.IPowerDnsClient.html">IPowerDnsClient</a>
+  </div>
+  <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.IEndpoint.html">IEndpoint</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright Bastian Eicher
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

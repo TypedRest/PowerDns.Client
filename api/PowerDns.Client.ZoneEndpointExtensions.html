@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZoneEndpointExtensions
+   | PowerDNS Client for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZoneEndpointExtensions
+   | PowerDNS Client for .NET ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PowerDns.Client.ZoneEndpointExtensions">
+  
+  
+  <h1 id="PowerDns_Client_ZoneEndpointExtensions" data-uid="PowerDns.Client.ZoneEndpointExtensions" class="text-break">Class ZoneEndpointExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ZoneEndpointExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PowerDns.Client.html">PowerDns.Client</a></h6>
+  <h6><strong>Assembly</strong>: PowerDns.Client.dll</h6>
+  <h5 id="PowerDns_Client_ZoneEndpointExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ZoneEndpointExtensions : Object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PowerDns_Client_ZoneEndpointExtensions_GetRecordSetAsync_" data-uid="PowerDns.Client.ZoneEndpointExtensions.GetRecordSetAsync*"></a>
+  <h4 id="PowerDns_Client_ZoneEndpointExtensions_GetRecordSetAsync_TypedRest_Endpoints_Generic_IElementEndpoint_PowerDns_Client_Models_Zone__PowerDns_Client_Models_CanonicalName_System_Threading_CancellationToken_" data-uid="PowerDns.Client.ZoneEndpointExtensions.GetRecordSetAsync(TypedRest.Endpoints.Generic.IElementEndpoint{PowerDns.Client.Models.Zone},PowerDns.Client.Models.CanonicalName,System.Threading.CancellationToken)">GetRecordSetAsync(IElementEndpoint&lt;Zone&gt;, CanonicalName, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a specific <a class="xref" href="PowerDns.Client.Models.RecordSet.html">RecordSet</a> identified by a <code data-dev-comment-type="paramref" class="paramref">recordSetName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;RecordSet&gt; GetRecordSetAsync(this IElementEndpoint&lt;Zone&gt; endpoint, CanonicalName recordSetName, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PowerDns.Client.Models.CanonicalName.html">CanonicalName</a></td>
+        <td><span class="parametername">recordSetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="PowerDns.Client.Models.RecordSet.html">RecordSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PowerDns.Client.Exceptions.RecordSetNotFoundException.html">RecordSetNotFoundException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerDns_Client_ZoneEndpointExtensions_PatchRecordSetAsync_" data-uid="PowerDns.Client.ZoneEndpointExtensions.PatchRecordSetAsync*"></a>
+  <h4 id="PowerDns_Client_ZoneEndpointExtensions_PatchRecordSetAsync_TypedRest_Endpoints_Generic_IElementEndpoint_PowerDns_Client_Models_Zone__PowerDns_Client_Models_RecordSet_System_Threading_CancellationToken_" data-uid="PowerDns.Client.ZoneEndpointExtensions.PatchRecordSetAsync(TypedRest.Endpoints.Generic.IElementEndpoint{PowerDns.Client.Models.Zone},PowerDns.Client.Models.RecordSet,System.Threading.CancellationToken)">PatchRecordSetAsync(IElementEndpoint&lt;Zone&gt;, RecordSet, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Modifies existing <a class="xref" href="PowerDns.Client.Models.RecordSet.html">RecordSet</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task PatchRecordSetAsync(this IElementEndpoint&lt;Zone&gt; endpoint, RecordSet recordSet, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PowerDns.Client.Models.RecordSet.html">RecordSet</a></td>
+        <td><span class="parametername">recordSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PowerDns_Client_ZoneEndpointExtensions_PatchRecordSetAsync_TypedRest_Endpoints_Generic_IElementEndpoint_PowerDns_Client_Models_Zone__PowerDns_Client_Models_RecordSet_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="PowerDns.Client.Models.RecordSet.html#PowerDns_Client_Models_RecordSet_ChangeType">ChangeType</a> must be set accordingly.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>If <a class="xref" href="PowerDns.Client.Models.RecordSet.html#PowerDns_Client_Models_RecordSet_ChangeType">ChangeType</a> is not set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-badrequest">BadRequest</a></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-notfound">NotFound</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-gone">Gone</a></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></td>
+        <td><p>Other non-success status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PowerDns_Client_ZoneEndpointExtensions_UpsertZoneRecordSetAsync_" data-uid="PowerDns.Client.ZoneEndpointExtensions.UpsertZoneRecordSetAsync*"></a>
+  <h4 id="PowerDns_Client_ZoneEndpointExtensions_UpsertZoneRecordSetAsync_TypedRest_Endpoints_Generic_IElementEndpoint_PowerDns_Client_Models_Zone__PowerDns_Client_Models_RecordSet_System_Threading_CancellationToken_" data-uid="PowerDns.Client.ZoneEndpointExtensions.UpsertZoneRecordSetAsync(TypedRest.Endpoints.Generic.IElementEndpoint{PowerDns.Client.Models.Zone},PowerDns.Client.Models.RecordSet,System.Threading.CancellationToken)">UpsertZoneRecordSetAsync(IElementEndpoint&lt;Zone&gt;, RecordSet, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upserts the given <code data-dev-comment-type="paramref" class="paramref">recordSet</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task UpsertZoneRecordSetAsync(this IElementEndpoint&lt;Zone&gt; endpoint, RecordSet recordSet, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PowerDns.Client.Models.RecordSet.html">RecordSet</a></td>
+        <td><span class="parametername">recordSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright Bastian Eicher
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

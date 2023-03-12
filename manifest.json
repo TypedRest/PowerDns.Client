@@ -1,0 +1,404 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/PowerDns.Client/PowerDns.Client/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv4AddressException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv4AddressException.html",
+          "hash": "x5J6J5uXlTMu73TXE3rf7DfIZKKl5fh0zGC0y4N0is8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv6AddressException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv6AddressException.html",
+          "hash": "wqVRz+ymUpd4nb85WTUBxmhcFrze22imgsmqYQb53uo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.RecordSetNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.RecordSetNotFoundException.html",
+          "hash": "gt3KVsOIIBtPbxWnEo+6xE/AtN5l7F2L9Ryw4zpkWys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.html",
+          "hash": "v2eSp5yXXxnsi9bSlsC7IBE2Ao5OMyl9PgSgqji8Wfo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.IPowerDnsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.IPowerDnsClient.html",
+          "hash": "Q9VuBHXDoNWFMziCKLNnS+67cXU/wE3gueCpXt1JjYI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.IServerElementEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.IServerElementEndpoint.html",
+          "hash": "A9pjwYij+uvUke4DflFHWiMZTZ1HEmYC5d0T62x11mc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.AAAARecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.AAAARecord.html",
+          "hash": "gdjAk1Rjtr22NS/slEOoVblitrgEL7WL6Bq7WApFyPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.AAAARecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.AAAARecordSet.html",
+          "hash": "XWjjjeUGTEs3iD9+zKBoVbgoF6uF6m67MwO/Yw6z76g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ARecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ARecord.html",
+          "hash": "ewqGamfXDYrKFp3c9WWgVCFdsM9ZQsnS6RXe6RTEnt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ARecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ARecordSet.html",
+          "hash": "511P7L+adPzG5My3xkc9Q/FOp1UrcGgc9MicX0wqmBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CNameRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CNameRecord.html",
+          "hash": "gwwXc7qvG1hIGe6tEPMbFWE1ixR93IbxmHTH8IbaVws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CNameRecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CNameRecordSet.html",
+          "hash": "nWvly+RSGw1In+ydATZi8NqhnIiVCpdniXlCG6OkgQo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CanonicalName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CanonicalName.html",
+          "hash": "gCUVL0kCNfh53QMYsZlhO5H4CbUkO4+Kfz5wJlaCgsY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CanonicalNameJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CanonicalNameJsonConverter.html",
+          "hash": "dJBI5KKui4Q9eGxdtYXDjJF5ZG3XRsEzP40f5yridUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ChangeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ChangeType.html",
+          "hash": "u4T1Rh/Yo4I/qK4jcVtK+O/pK+AFHZ526/C1CoyUHck="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.Record.html",
+          "hash": "MjRqLjJx0CLbHe7gmD6fWDhUXRgJnn7mqhC4Jy/1s94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.RecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.RecordSet.html",
+          "hash": "gOAaNQ//KBCKGHt8dZCuhwwYgKcl8DMNWex/A3N4Gqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.RecordType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.RecordType.html",
+          "hash": "hDPRYKhUCoLi/mYDEO1Pe4YwK7p7W/l1iUBivT91vnc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.Zone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.Zone.html",
+          "hash": "iA5ujBpQfXn9wsxjcCRoWJyKyo7oVjz49owbus0nYtc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ZoneKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ZoneKind.html",
+          "hash": "2nYqkWUxw3nJbGhDQBA3fV9Cmk/Kqt0dFwBo0zHK+mA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.html",
+          "hash": "FaVXX4fw0yz09gozcyNMhDnMq8+h2zp4WMufvkYmPRU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.PowerDnsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.PowerDnsClient.html",
+          "hash": "oJ9WAF7I/FK4jmyrT7uFn4klG/rsIByOZ90AqsoZAjk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ServerElementEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ServerElementEndpoint.html",
+          "hash": "ZnS4QuMZ06R0+qNdibRUWiWmP+9joqZV3+d0UKCv/ck="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ZoneCollectionEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ZoneCollectionEndpoint.html",
+          "hash": "CWc8u7rkCnWdPX5/Rm06KcbUsVpC8BM7h4RCUjCpTvw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ZoneEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ZoneEndpointExtensions.html",
+          "hash": "PsetbObEcgMztf64rkdlZyapJDBmZhg2xmoyhBNUf2A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.html",
+          "hash": "0gSvXABS6lpb219/JZ7Yzlpw+NI8mhp02CnkPaIL98A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "G/kosy2QUjhtw0+X0khZ66cQVO32zmD0mhf/vTjtYj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "M64UpXx6PzAlP1+TB1bgE7xhkC3Ilkt2trxrhLeOuuM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "j57Z51vZmPMeE5+RuGttfsB2+FBzj/7SqgxjqPSYGh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 26,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
