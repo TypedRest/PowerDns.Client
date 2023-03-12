@@ -9,7 +9,7 @@
       "automergeType": "branch"
     },
     {
-      "matchPackagePatterns": ["SourceLink", "TypedRest"],
+      "matchPackagePatterns": ["gittools", "SourceLink", "TypedRest"],
       "automerge": true,
       "automergeType": "branch"
     }
