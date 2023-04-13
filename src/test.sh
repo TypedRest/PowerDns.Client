@@ -10,4 +10,4 @@ else
 fi
 
 # Unit tests (without .NET Framework)
-$dotnet test --no-build --logger trx --configuration Release --framework net6.0 UnitTests/UnitTests.csproj
+$dotnet test --no-build --logger trx --configuration Release UnitTests/UnitTests.csproj
