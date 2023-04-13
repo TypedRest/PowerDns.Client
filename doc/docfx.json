@@ -15,9 +15,7 @@
     "globalMetadata": {
       "_baseUrl": "https://powerdns.typedrest.net",
       "_appTitle": "PowerDNS Client for .NET",
-      "_appFooter": "Copyright Bastian Eicher",
-      "_disableBreadcrumb": true,
-      "_enableNewTab": true
+      "_appFooter": "Copyright Bastian Eicher"
     },
     "content": [
       {
@@ -39,6 +37,12 @@
     ],
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "postProcessors": ["ExtractSearchIndex"],
+    "template": [
+      "default",
+      "modern",
+      "template"
     ],
     "dest": "../artifacts/Documentation"
   }
