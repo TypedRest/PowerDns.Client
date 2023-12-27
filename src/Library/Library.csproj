@@ -32,7 +32,7 @@
 
   <!-- Dependencies -->
   <ItemGroup>
-    <PackageReference Include="TypedRest" Version="1.5.1" />
+    <PackageReference Include="TypedRest" Version="1.5.2" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
