@@ -33,7 +33,7 @@
   <!-- Dependencies -->
   <ItemGroup>
     <PackageReference Include="TypedRest" Version="1.6.4" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.203" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
