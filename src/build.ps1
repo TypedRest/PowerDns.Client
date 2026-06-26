@@ -8,6 +8,6 @@ function Run-DotNet {
 }
 
 if ($env:CI) { $ci = "/p:ContinuousIntegrationBuild=True" }
-Run-DotNet msbuild /v:Quiet /t:Restore /t:Build $ci /p:Configuration=Release /p:Version=$Version
+Run-DotNet msbuild /v:Quiet /Restore /t:Build $ci /p:Configuration=Release /p:Version=$Version
 
 popd
