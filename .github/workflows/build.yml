@@ -50,14 +50,6 @@ jobs:
             **[NuGet package](https://www.nuget.org/packages/PowerDns.Client/${{steps.gitversion.outputs.nuGetVersion}})**
             ## Changes
             ${{steps.tag_message.outputs.message}}
-      - name: Post-release commit
-        if: github.ref_type == 'tag'
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git checkout -q master
-          git commit --all -m "Automatic post-release commit"
-          git push -q
 
       # Publish
       - name: Publish documentation
