@@ -23,7 +23,7 @@ namespace PowerDns.Client
         [Fact]
         public async Task GettingRecordSetReturnsCorrectRecordSet()
         {
-            _endpointMock.Setup(x => x.ReadAsync(CancellationToken.None))
+            _endpointMock.Setup(x => x.ReadAsync(TestContext.Current.CancellationToken))
                          .ReturnsAsync(new Zone("example.org")
                           {
                               RecordSets =
@@ -33,7 +33,7 @@ namespace PowerDns.Client
                               }
                           });
 
-            var recordSet = await _endpoint.GetRecordSetAsync("www.example.org");
+            var recordSet = await _endpoint.GetRecordSetAsync("www.example.org", cancellationToken: TestContext.Current.CancellationToken);
 
             recordSet.Should().BeEquivalentTo(new RecordSet("www.example.org", TimeSpan.FromSeconds(1)));
         }
@@ -56,9 +56,9 @@ namespace PowerDns.Client
             var zone = new Zone(zoneName) {RecordSets = {recordSet}};
 
             _endpointMock.SetupGet(x => x.Uri).Returns(new Uri($"http://localhost/api/v1/servers/localhost/zones/{zoneName}"));
-            _endpointMock.Setup(x => x.MergeAsync(zone, CancellationToken.None)).ReturnsAsync(zone).Verifiable();
+            _endpointMock.Setup(x => x.MergeAsync(zone, TestContext.Current.CancellationToken)).ReturnsAsync(zone).Verifiable();
 
-            await _endpoint.PatchRecordSetAsync(recordSet);
+            await _endpoint.PatchRecordSetAsync(recordSet, cancellationToken: TestContext.Current.CancellationToken);
 
             _endpointMock.Verify();
         }

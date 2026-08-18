@@ -28,7 +28,7 @@ namespace PowerDns.Client
                      Content = new StringContent("[{\"name\": \"example.org.\", \"nameservers\": [\"ns1.example.org\", \"ns2.example.org\"]}]", Encoding.UTF8, JsonMime)
                  });
 
-            var zones = await _zonesEndpoint.ReadAllAsync();
+            var zones = await _zonesEndpoint.ReadAllAsync(TestContext.Current.CancellationToken);
 
             zones.Should().Equal(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org"));
         }
@@ -42,7 +42,7 @@ namespace PowerDns.Client
                      Content = new StringContent("{\"name\": \"example.org.\", \"nameservers\": [\"ns1.example.org\", \"ns2.example.org\"]}", Encoding.UTF8, JsonMime)
                  });
 
-            var zone = await _zonesEndpoint["example.org"].ReadAsync();
+            var zone = await _zonesEndpoint["example.org"].ReadAsync(TestContext.Current.CancellationToken);
 
             zone.Should().Be(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org"));
         }
@@ -53,7 +53,7 @@ namespace PowerDns.Client
             Mock.Expect(HttpMethod.Post, "http://localhost/api/v1/servers/localhost/zones")
                 .Respond(HttpStatusCode.Created);
 
-            await _zonesEndpoint.CreateAsync(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org"));
+            await _zonesEndpoint.CreateAsync(new Zone("example.org", /*nameservers:*/ "ns1.example.org", "ns2.example.org"), TestContext.Current.CancellationToken);
         }
 
         [Fact]
@@ -62,7 +62,7 @@ namespace PowerDns.Client
             Mock.Expect(HttpMethod.Delete, "http://localhost/api/v1/servers/localhost/zones/example.org.")
                 .Respond(HttpStatusCode.NoContent);
 
-            await _zonesEndpoint["example.org"].DeleteAsync();
+            await _zonesEndpoint["example.org"].DeleteAsync(TestContext.Current.CancellationToken);
         }
     }
 }
