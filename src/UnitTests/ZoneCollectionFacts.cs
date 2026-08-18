@@ -2,7 +2,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using PowerDns.Client.Models;
 using RichardSzalay.MockHttp;
 using TypedRest.Endpoints.Generic;
