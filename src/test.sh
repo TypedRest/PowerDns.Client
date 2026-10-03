@@ -9,5 +9,5 @@ else
     dotnet="../0install.sh run --version 8.0..!6.1 https://apps.0install.net/dotnet/sdk.xml"
 fi
 
-# Unit tests (without .NET Framework)
-$dotnet test --no-build --configuration Release UnitTests/UnitTests.csproj
+echo "Run unit tests (without .NET Framework)"
+$dotnet test --no-build --configuration Release
