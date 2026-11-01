@@ -1,0 +1,420 @@
+{
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
+  "source_base_path": "/home/runner/work/PowerDns.Client/PowerDns.Client/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv4AddressException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv4AddressException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Exceptions.InvalidIPv4AddressException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv6AddressException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.InvalidIPv6AddressException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Exceptions.InvalidIPv6AddressException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.RecordSetNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.RecordSetNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Exceptions.RecordSetNotFoundException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.IPowerDnsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.IPowerDnsClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.IPowerDnsClient",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.IPowerDnsClient.yml\" sourcestartlinenumber=\"1\">A type-safe client for the PowerDNS API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.IServerElementEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.IServerElementEndpoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.IServerElementEndpoint",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.IServerElementEndpoint.yml\" sourcestartlinenumber=\"1\">Represents a specific server managed by an instance of the PowerDNS API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.AAAARecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.AAAARecord.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.AAAARecord",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.AAAARecord.yml\" sourcestartlinenumber=\"1\">Represents an AAAA record which maps a domain name to a IPv6 address.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.AAAARecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.AAAARecordSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.AAAARecordSet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ARecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ARecord.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.ARecord",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.ARecord.yml\" sourcestartlinenumber=\"1\">Represents an A record which maps a domain name to a IPv4 address.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ARecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ARecordSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.ARecordSet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CNameRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CNameRecord.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.CNameRecord",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.CNameRecord.yml\" sourcestartlinenumber=\"1\">Represets a CName record.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CNameRecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CNameRecordSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.CNameRecordSet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CanonicalName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CanonicalName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.CanonicalName",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.CanonicalName.yml\" sourcestartlinenumber=\"1\">Represents an canonical name which ensures a trailing dot.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.CanonicalNameJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.CanonicalNameJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.CanonicalNameJsonConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ChangeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ChangeType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.ChangeType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.Record.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.Record",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.Record.yml\" sourcestartlinenumber=\"1\">Represents a single record in a <xref href=\"PowerDns.Client.Models.RecordSet\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.RecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.RecordSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.RecordSet",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.RecordSet.yml\" sourcestartlinenumber=\"1\">Represents a set records.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.RecordType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.RecordType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.RecordType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.Zone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.Zone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.Zone",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.Models.Zone.yml\" sourcestartlinenumber=\"1\">Represents an authoritative DNS Zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.ZoneKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.ZoneKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models.ZoneKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.PowerDnsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.PowerDnsClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.PowerDnsClient",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.PowerDnsClient.yml\" sourcestartlinenumber=\"1\">A type-safe client for the PowerDNS API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ServerElementEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ServerElementEndpoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.ServerElementEndpoint",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.ServerElementEndpoint.yml\" sourcestartlinenumber=\"1\">Represents a specific server managed by an instance of the PowerDNS API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ZoneCollectionEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ZoneCollectionEndpoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.ZoneCollectionEndpoint",
+      "Summary": "<p sourcefile=\"api/PowerDns.Client.ZoneCollectionEndpoint.yml\" sourcestartlinenumber=\"1\">Represents a collection of DNS zones on a PowerDNS server.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.ZoneEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.ZoneEndpointExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client.ZoneEndpointExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PowerDns.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PowerDns.Client.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PowerDns.Client",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

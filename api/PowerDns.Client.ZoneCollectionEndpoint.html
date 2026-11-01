@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ZoneCollectionEndpoint | PowerDNS Client for .NET </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ZoneCollectionEndpoint | PowerDNS Client for .NET ">
+      
+      <meta name="description" content="Represents a collection of DNS zones on a PowerDNS server.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TypedRest/PowerDns.Client/new/0.3.6/apiSpec/new?filename=PowerDns_Client_ZoneCollectionEndpoint.md&amp;value=---%0Auid%3A%20PowerDns.Client.ZoneCollectionEndpoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PowerDns.Client.ZoneCollectionEndpoint">
+
+
+
+  <h1 id="PowerDns_Client_ZoneCollectionEndpoint" data-uid="PowerDns.Client.ZoneCollectionEndpoint" class="text-break">
+Class ZoneCollectionEndpoint  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/PowerDns.Client/blob/0.3.6/src/Library/ZoneCollectionEndpoint.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">PowerDns</span>.<a class="xref" href="PowerDns.Client.html">Client</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PowerDns.Client.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a collection of DNS zones on a PowerDNS server.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZoneCollectionEndpoint : CollectionEndpoint&lt;Zone&gt;, ICachingEndpoint, ICollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;, IIndexerEndpoint&lt;ElementEndpoint&lt;Zone&gt;&gt;, ICollectionEndpoint&lt;Zone&gt;, ICollectionEndpoint&lt;Zone, IElementEndpoint&lt;Zone&gt;&gt;, IIndexerEndpoint&lt;IElementEndpoint&lt;Zone&gt;&gt;, IEndpoint</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html">EndpointBase</a></div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CachingEndpointBase.html">CachingEndpointBase</a></div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html">CollectionEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>, <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ElementEndpoint-1.html">ElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-1.html">CollectionEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</div>
+      <div><span class="xref">ZoneCollectionEndpoint</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.ICachingEndpoint.html">ICachingEndpoint</a></div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html">ICollectionEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>, <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ElementEndpoint-1.html">ElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IIndexerEndpoint-1.html">IIndexerEndpoint</a>&lt;<a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ElementEndpoint-1.html">ElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ICollectionEndpoint-1.html">ICollectionEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html">ICollectionEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>, <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IIndexerEndpoint-1.html">IIndexerEndpoint</a>&lt;<a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.IEndpoint.html">IEndpoint</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.ReadAllAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.HandleCapabilities(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.rangeitemheadervalue">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.ReadRangeAsync(RangeItemHeaderValue, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.CreateAsync(Zone, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.CreateAllAsync(IEnumerable&lt;Zone&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.SetAllAsync(IEnumerable&lt;Zone&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_Item__0_">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.this[Zone]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_ReadAllAllowed">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.ReadAllAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_RangeUnit">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.RangeUnit</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_ReadRangeAllowed">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.ReadRangeAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_CreateAllowed">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.CreateAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_CreateAllAllowed">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.CreateAllAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html#TypedRest_Endpoints_Generic_CollectionEndpoint_2_SetAllAllowed">CollectionEndpoint&lt;Zone, ElementEndpoint&lt;Zone&gt;&gt;.SetAllAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CachingEndpointBase.GetContentAsync(CancellationToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">CachingEndpointBase.PutContentAsync(HttpContent, CancellationToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CachingEndpointBase.DeleteContentAsync(CancellationToken, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.CachingEndpointBase.html#TypedRest_Endpoints_Generic_CachingEndpointBase_ResponseCache">CachingEndpointBase.ResponseCache</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">EndpointBase.HandleAsync(Func&lt;Task&lt;HttpResponseMessage&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">EndpointBase.FinalizeAsync(Func&lt;Task&lt;HttpResponseMessage&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.StartActivity(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.SetDefaultLink(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.SetDefaultLinkTemplate(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.GetLinks(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.Link(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.GetLinkTemplate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.LinkTemplate(string, IDictionary&lt;string, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EndpointBase.LinkTemplate(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">EndpointBase.HandleCapabilities(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">EndpointBase.IsMethodAllowed(HttpMethod)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_ToString">EndpointBase.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_GetConstructor__1">EndpointBase.GetConstructor&lt;TEndpoint&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_Uri">EndpointBase.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_HttpClient">EndpointBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_Serializers">EndpointBase.Serializers</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_Serializer">EndpointBase.Serializer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_ErrorHandler">EndpointBase.ErrorHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.EndpointBase.html#TypedRest_Endpoints_EndpointBase_LinkExtractor">EndpointBase.LinkExtractor</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="PowerDns_Client_ZoneCollectionEndpoint__ctor_" data-uid="PowerDns.Client.ZoneCollectionEndpoint.#ctor*"></a>
+
+  <h3 id="PowerDns_Client_ZoneCollectionEndpoint__ctor_TypedRest_Endpoints_IEndpoint_" data-uid="PowerDns.Client.ZoneCollectionEndpoint.#ctor(TypedRest.Endpoints.IEndpoint)">
+  ZoneCollectionEndpoint(IEndpoint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/PowerDns.Client/blob/0.3.6/src/Library/ZoneCollectionEndpoint.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoneCollectionEndpoint(IEndpoint referrer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>referrer</code> <a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.IEndpoint.html">IEndpoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="PowerDns_Client_ZoneCollectionEndpoint_Item_" data-uid="PowerDns.Client.ZoneCollectionEndpoint.Item*"></a>
+
+  <h3 id="PowerDns_Client_ZoneCollectionEndpoint_Item_System_String_" data-uid="PowerDns.Client.ZoneCollectionEndpoint.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/PowerDns.Client/blob/0.3.6/src/Library/ZoneCollectionEndpoint.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an element endpoint for a specific child element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ElementEndpoint&lt;Zone&gt; this[string id] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID identifying the entity.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dotnet.typedrest.net/api/TypedRest.Endpoints.Generic.ElementEndpoint-1.html">ElementEndpoint</a>&lt;<a class="xref" href="PowerDns.Client.Models.Zone.html">Zone</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TypedRest/PowerDns.Client/blob/0.3.6/src/Library/ZoneCollectionEndpoint.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright Bastian Eicher
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
