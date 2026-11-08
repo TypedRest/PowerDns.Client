@@ -24,6 +24,7 @@
     <PackageProjectUrl>https://github.com/TypedRest/PowerDns.Client</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/TypedRest/PowerDns.Client</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/TypedRest/PowerDns.Client/releases/tag/$(Version)</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
